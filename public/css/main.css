@@ -1,0 +1,51 @@
+a {
+	text-decoration-line: none;
+}
+
+body {
+	font-family: 'Crimson Text', sans-serif;
+	color: #fff !important;
+	overflow: hidden !important;
+}
+
+a {
+	text-decoration-line: none;
+	cursor: pointer;
+}
+
+.style-link {
+	opacity: 0;
+	font-size: 2rem;
+	color: #fff !important;
+    text-decoration: none;
+    letter-spacing: -5px;
+}
+
+.top-banner {
+	text-align: center;
+}
+
+#name {
+	padding-top: 15px;
+	font-size: 4rem;
+	letter-spacing: -5px;
+}
+
+#pic {
+	height: 100vh;
+	background-image: url("../img/mountains-low-2.svg?lastmod=");
+	background-size: cover;
+	background-position: 50% 0;
+}
+
+#path-wrapper {
+	width: 100vw;
+	height: auto;
+}
+
+#svg110 {
+	padding-top: 104px;
+	width: 1331.85px;
+	height: 100%;
+	overflow: hidden !important;
+}
