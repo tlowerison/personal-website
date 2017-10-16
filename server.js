@@ -1,5 +1,9 @@
 var express = require('express');
 var path = require('path');
+var dotenv = require('dotenv');
+
+/** Load environment variables from .env file **/
+dotenv.load();
 
 var app = express();
 app.set('port', 3003);
