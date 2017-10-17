@@ -1,4 +1,9 @@
-app.controller("Ctrl", function($scope, $http) {
+angular.module("MyApp", [])
+.config(function($locationProvider) {
+	$locationProvider.html5Mode(true);
+	$locationProvider.hashPrefix("");
+})
+.controller("Ctrl", function($scope, $http) {
 	$(document).ready(function() {
 		$('#name').animate({
 			opacity: 1,
