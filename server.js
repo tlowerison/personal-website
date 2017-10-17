@@ -6,8 +6,8 @@ var dotenv = require('dotenv');
 dotenv.load();
 
 var app = express();
-app.set('port', process.env.PORT || 3000);
-app.use(express.static(path.join(__dirname, '/public')));
+app.set('port', process.env.PORT || 3018);
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Production error handler
 if (app.get('env') === 'production') {
@@ -16,10 +16,6 @@ if (app.get('env') === 'production') {
 		res.sendStatus(err.status || 500);
 	});
 }
-
-app.get('/', function(req, res) {
-	res.sendFile(__dirname + 'public/index.html');
-})
 
 app.listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));

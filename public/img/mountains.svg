@@ -19,13 +19,13 @@
    inkscape:version="0.92.1 r15371">
    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop id="start" style="stop-color:#1a5b76; stop-opacity:0">
-      <animate attributeName="offset" begin="400ms" fill="freeze" from="-0.16" to="1" dur="2.5s" />
+      <animate attributeName="offset" begin="800ms" fill="freeze" from="-0.16" to="1" dur="2.4s" />
     </stop>
     <stop id="mid" style="stop-color:#fff;stop-opacity:1">
-      <animate attributeName="offset" begin="400ms" fill="freeze" from="-0.12" to="1.04" dur="2.5s" />
+      <animate attributeName="offset" begin="800ms" fill="freeze" from="-0.12" to="1.04" dur="2.4s" />
     </stop>
     <stop id="end" style="stop-color:#1a5b76;stop-opacity:0">
-      <animate attributeName="offset" begin="400ms" fill="freeze" from="-0.08" to="1.08" dur="2.5s" />
+      <animate attributeName="offset" begin="800ms" fill="freeze" from="-0.08" to="1.08" dur="2.4s" />
     </stop>
   </linearGradient>
   <metadata
