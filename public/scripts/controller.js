@@ -11,7 +11,7 @@ angular.module("MyApp", [])
 				[
 					'font-size', 
 					{
-						'down': '2.8rem',
+						'down': '2.5rem',
 						'up': '4rem'
 					}
 				]
