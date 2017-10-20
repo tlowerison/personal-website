@@ -1,16 +1,12 @@
 a {
 	text-decoration-line: none;
+	cursor: pointer;
 }
 
 body {
 	font-family: 'Crimson Text', sans-serif;
 	color: #fff !important;
 	overflow: hidden !important;
-}
-
-a {
-	text-decoration-line: none;
-	cursor: pointer;
 }
 
 .style-link {
@@ -45,9 +41,4 @@ a {
 	background-image: url("../img/mountains.svg?lastmod=");
 	background-size: cover;
 	background-position: 50% 0;
-}
-
-#path-wrapper {
-	width: 100vw;
-	height: auto;
 }
