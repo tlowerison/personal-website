@@ -17,12 +17,24 @@ a {
 	opacity: 0;
 	font-size: 2rem;
 	color: #fff !important;
-    text-decoration: none;
-    letter-spacing: -5px;
+	text-decoration: none;
+	letter-spacing: -5px;
 }
 
 .top-banner {
 	text-align: center;
+}
+
+#background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+#content {
+	position: relative;
+	z-index: 100;
 }
 
 #name {
@@ -31,14 +43,14 @@ a {
 	letter-spacing: -5px;
 }
 
+#path-wrapper {
+	width: 100vw;
+	height: auto;
+}
+
 #pic {
 	height: 100vh;
 	background-image: url("../img/mountains.svg?lastmod=");
 	background-size: cover;
 	background-position: 50% 0;
-}
-
-#path-wrapper {
-	width: 100vw;
-	height: auto;
 }
