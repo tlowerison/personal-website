@@ -19,6 +19,9 @@ angular.module("MyApp", [])
 		// previous background
 		var backgroundImage = $('#pic').css('background-image').split("=")[0] + "=" + (10000000 * Math.random()).toString();
 		$('#pic').css({'background-image': backgroundImage});
+
+		var size = $(window).width() > 768 ? 'sm' : 'md';
+		resize();
 	});
 	var size = $(window).width() > 768 ? 'sm' : 'md';
 	function trigger(dir) {
@@ -31,16 +34,18 @@ angular.module("MyApp", [])
 	function prepTrigger(dir) {
 		size = (dir == "up" ? "sm" : "md");
 	}
-	$(window).on("resize", function() {
+
+	function resize() {
 		console.log(size);
 		if (trigger('down')) {
 			$('#name').css({'font-size': '3rem'});
-			$('#style-link').css({'font-size': '1.5rem'});
+			$('#style-link').css({'font-size': '2rem'});
 			prepTrigger('up');
 		} else if (trigger('up')) {
 			$('#name').css({'font-size': '4rem'});
 			$('#style-link').css({'font-size': '2rem'});
 			prepTrigger('down');
 		}
-	});
+	}
+	$(window).on("resize", resize);
 });

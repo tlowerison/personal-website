@@ -35,6 +35,9 @@ a {
 	padding-top: 15px;
 	font-size: 4rem;
 	letter-spacing: -5px;
+	opacity: 0;
+	color: #fff !important;
+    text-decoration: none;
 }
 
 #pic {
