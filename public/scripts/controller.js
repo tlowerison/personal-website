@@ -11,7 +11,7 @@ angular.module("MyApp", [])
 				[
 					'font-size', 
 					{
-						'down': '2.5rem',
+						'down': '2.8rem',
 						'up': '4rem'
 					}
 				]
@@ -22,6 +22,15 @@ angular.module("MyApp", [])
 					{
 						'down': '2rem',
 						'up': '2rem'
+					}
+				]
+			],
+			'#statement': [
+				[
+					'font-size',
+					{
+						'down': '2.4rem',
+						'up': '3rem'
 					}
 				]
 			]
@@ -71,7 +80,13 @@ angular.module("MyApp", [])
 		// previous background
 		var backgroundImage = $('#pic').css('background-image').split("=")[0] + "=" + (10000000 * Math.random()).toString();
 		$('#pic').css({'background-image': backgroundImage});
+		
 
 		resize();
 	});
 });
+
+
+/*
+
+*/

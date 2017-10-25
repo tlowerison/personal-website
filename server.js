@@ -6,7 +6,7 @@ var dotenv = require('dotenv');
 dotenv.load();
 
 var app = express();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3002);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Production error handler
