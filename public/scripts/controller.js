@@ -8,31 +8,13 @@ angular.module("MyApp", [])
 		var size = $(window).width() > 768 ? 'sm' : 'md';
 		var triggers = {
 			'#name': [
-				[
-					'font-size', 
-					{
-						'down': '2.8rem',
-						'up': '4rem'
-					}
-				]
+				[ 'font-size', { 'down': '2.8rem', 'up': '4rem' } ]
 			],
 			'#style-link': [
-				[
-					'font-size', 
-					{
-						'down': '2rem',
-						'up': '2rem'
-					}
-				]
+				[ 'font-size', { 'down': '2rem', 'up': '2rem' } ]
 			],
 			'#statement': [
-				[
-					'font-size',
-					{
-						'down': '2.4rem',
-						'up': '3rem'
-					}
-				]
+				[ 'font-size', { 'down': '2.4rem', 'up': '3rem' } ]
 			]
 		}
 
@@ -80,7 +62,16 @@ angular.module("MyApp", [])
 		// previous background
 		var backgroundImage = $('#pic').css('background-image').split("=")[0] + "=" + (10000000 * Math.random()).toString();
 		$('#pic').css({'background-image': backgroundImage});
-		
+
+		$(function() {
+			$('#statement').textillate({
+				initialDelay: 1600,
+				in: {
+					delay: 2400 / $('#statement').html().length,
+					effect: 'fadeIn'
+				}
+			})
+		});
 
 		resize();
 	});
