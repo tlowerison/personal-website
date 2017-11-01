@@ -8,13 +8,13 @@ angular.module("MyApp", [])
 		var size = $(window).width() > 768 ? 'sm' : 'md';
 		var triggers = {
 			'#name': [
-				[ 'font-size', { 'down': '2.8rem', 'up': '4rem' } ]
+				[ 'font-size', { 'down': '2.6rem', 'up': '4rem' } ]
 			],
 			'#style-link': [
 				[ 'font-size', { 'down': '2rem', 'up': '2rem' } ]
 			],
 			'#statement': [
-				[ 'font-size', { 'down': '2.4rem', 'up': '3rem' } ]
+				[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ]
 			]
 		}
 
