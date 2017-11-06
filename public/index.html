@@ -14,8 +14,6 @@
 		<!-- Bootstrap CDN -->
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Angular CDN -->
-			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<!-- Controller -->
 			<script src="scripts/controller.js"></script>
 		<!-- Stylesheet -->
@@ -29,29 +27,71 @@
 		<!-- Textillate.js Library -->
 			<script src="assets/jquery.textillate.js"></script>
 	</head>
-
-	<body ng-app="MyApp" ng-controller="Ctrl">
+	<body>
 		<div id="content">
 			<div id="pic">
 				<div class="container">
-					<div class="row top-banner">
-						<div class="col-sm-12 col-md-12 col-lg-12">
-							<div id="name" style="opacity: 0">Trey Lowerison</div>
+					<div class="row banner">
+						<div class="col-xs-12">
+							<div id="name" class="title">Trey Lowerison</div>
 						</div>
 					</div>
-					<div class="row top-banner">
-						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="row banner">
+						<div class="col-xs-4">
 							<a id="gl" class="style-link" href="https://github.com/tlowerison">Github</a>
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-xs-4">
 							<a id="ll" class="style-link" href="https://linkedin.com/in/tlowerison">LinkedIn</a>
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-xs-4">
 							<a id="rl" class="style-link" href="/trey-lowerison-resume.pdf">Resume</a>
 						</div>
 					</div>
-					<div class="row top-banner">
-						<div id="statement">I’m a triple threat in Computer Science, Physics and Leadership with a unique approach to every opportunity. Give me a challenge and watch me adapt.</div>
+					<div class="row banner">
+						<div id="statement">I'm a double major in Physics & Computer Science with a focus on Leadership and a unique approach to every opportunity. Give me a challenge and watch me adapt.</div>
+					</div>
+					<div id="footer-banner" class="row banner">
+						<div class="col-xs-12">
+							<a id="lrl" class="style-link">Letter of Recommendation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="recommendation">
+			<div class="container">
+				<div class="row banner">
+					<div class="col-xs-12">
+						<div class="title">Recommendation</div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="letter" class="col-xs-12">
+						"I am very pleased to offer this letter of recommendation for Trey Lowerison.  I met Trey when both my 13 year old son and I enrolled in an introduction to computer programming class he taught during the summer of 2017.  Trey designed a short, but intense course that not only introduced students to Python, but perhaps more importantly the fundamentals of algorithm design, programming constructs, and logic.  What made designing and teaching this course challenging was the diversity of the audience.  The course was primarily designed for high school students in our local community, but the audience ranged from middle school students with no programming background to a retired technology executive with previous experience in software engineering (me).
+						<br />
+						<br />
+						Trey did a great job in tailoring the material to his audience and managed to keep the middle school students engaged and entertained while at the same time conveying the fundamental concepts.   For example, the younger students requested projects that were interesting to them including developing games as well as learning about encryption.  Trey was able to come up with suitable projects either on the fly or after the day’s class and have them ready for the students the next day.  Keeping the younger students focused was harder than it may seem given the class typically ran for up to four hours a day, and the middle schoolers weren’t used to focusing for such an extended period.  Trey used his boundless energy and humor to keep the students on task.  He was also able to come up with examples that demonstrated complex topics (e.g. encryption) in ways the younger students could understand.
+						<br />
+						<br />
+						Trey was also also able to engage with me in an articulate manner as we brainstormed various approaches to illustrating programming concepts to the other students in the class.  I was so impressed with his ability to teach my son, that I hired Trey to continue his instruction for my son after the class had formally ended.
+						<br />
+						<br />
+						In summary, Trey is very intelligent, self-motivated, able to think on his feet, and a problem solver.  Additionally, he is an energetic and enthusiastic communicator that can command the attention of a very diverse audience.  I would certainly be excited to have Trey intern for one of my personal endeavors."
+						<br />
+						<br />
+						- Dan Baum, Co-Founder of Shutterfly
+						<br />
+					</div>
+				</div>
+				<div class="row banner">
+					<div class="col-xs-12">
+						<div id="wrapper">
+							<svg id="arrow" fill="#222222" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0h24v24H0z" fill="none"/>
+								<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+							</svg>
+							<a id="rel" class="style-link">Return</a>
+						</a>
 					</div>
 				</div>
 			</div>

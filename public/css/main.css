@@ -5,34 +5,66 @@ a {
 
 body {
 	font-family: 'Crimson Text', sans-serif;
-	color: #fff !important;
-	overflow: hidden !important;
+	overflow: hidden;
+}
+
+.banner {
+	text-align: center;
 }
 
 .style-link {
 	opacity: 0;
 	font-size: 2rem;
 	color: #fff !important;
-    text-decoration: none;
-    letter-spacing: -5px;
+	text-decoration: none;
+	letter-spacing: -5px;
 }
 
-.top-banner {
-	text-align: center;
+.title {
+	padding-top: 15px;
+	font-size: 4rem;
+}
+
+#arrow {
+	display: inline-block;
+	margin-left: -36px;
+	width: 36px;
+	height: 36px;
+	vertical-align: middle;
 }
 
 #content {
 	background-image: url("../img/mountains.jpg");
 	background-size: cover;
 	background-position: 50% 0;
+	color: #fff;
+	position: relative;
+}
+
+#footer-banner {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -171px;
+}
+
+#letter {
+	margin-top: 2.5vh;
+	font-size: 1.8rem;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#lrl {
+	letter-spacing: 2px !important;
+	opacity: 0;
+	font-size: 2.5rem;
+	background: radial-gradient(rgba(150, 150, 150, 0.8) 0%, rgba(150, 150, 150, 0) 60%);
 }
 
 #name {
-	padding-top: 15px;
-	font-size: 4rem;
 	letter-spacing: -5px;
 	opacity: 0;
-	color: #fff !important;
     text-decoration: none;
 }
 
@@ -43,7 +75,28 @@ body {
 	background-position: 50% 0;
 }
 
+#recommendation {
+	color: #222;
+}
+
+#rel {
+	color: #222 !important;
+	opacity: 1 !important;
+	letter-spacing: 2px;
+}
+
 #statement {
-	margin-top: 18vh;
+	margin-top: 21vh;
 	padding: auto;
 }
+
+#wrapper {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#wrapper a {
+	vertical-align: middle;
+
