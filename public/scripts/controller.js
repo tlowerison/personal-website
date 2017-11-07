@@ -12,7 +12,11 @@
 			[ 'bottom', {'down': '50px', 'up': '30px'}]
 		],
 		'#statement': [
-			[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ]
+			[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ],
+			[ 'html', {
+				'down': 'I have a deep interest in understanding the sciences of computing and physics while providing leadership amongst my peers. Give me a challenge and watch me adapt.',
+				'up': 'I have an insatiable apettite for understanding our physical world and the science of computing to push the boundaries of knowledge while at the same time providing leadership amongst my peers. Give me a challenge and watch me adapt, innovate and effectuate change.'
+			}]
 		]
 	}
 
@@ -33,6 +37,10 @@
 			for (var key in triggers) {
 				for (var index in triggers[key]) {
 					var propVal = triggers[key][index];
+					if (propVal[0] == 'html') {
+						$(key).html(propVal[1][triggered]);
+						continue;
+					}
 					var cssObj = {};
 					cssObj[propVal[0]] = propVal[1][triggered];
 					$(key).css(cssObj);
@@ -45,6 +53,8 @@
 
 // Text Animation, Background SVG Cache Trick
 	$(document).ready(function() {
+		resize();
+
 		// Background Image
 			// cache won't reload background images, so opening svg animation doesn't reload
 			// solution: change lastMod id of svg so that cache doesn't recognize it as the
@@ -75,7 +85,7 @@
 				$('#statement').textillate({
 					initialDelay: 1600,
 					in: {
-						delay: 2400 / $('#statement').html().length,
+						delay: 1600 / $('#statement').html().length,
 						effect: 'fadeIn'
 					}
 				})
@@ -135,6 +145,4 @@
 					});
 				}, 900);
 			});
-
-		resize();
 	});
