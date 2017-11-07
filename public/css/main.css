@@ -43,7 +43,7 @@ body {
 
 #footer-banner {
 	position: absolute;
-	bottom: 30px;
+	bottom: 140px !important;
 	left: 50%;
 	margin-left: -171px;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 #statement {
-	margin-top: 21vh;
+	margin-top: 5vh;
 	padding: auto;
 }
 
