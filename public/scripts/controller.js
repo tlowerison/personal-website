@@ -14,8 +14,7 @@
 		'#statement': [
 			[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ],
 			[ 'html', {
-				'down': 'I have a deep interest in understanding the sciences of computing and physics while providing leadership amongst my peers. Give me a challenge and watch me adapt.',
-				'up': 'I have an insatiable apettite for understanding our physical world and the science of computing to push the boundaries of knowledge while at the same time providing leadership amongst my peers. Give me a challenge and watch me adapt, innovate and effectuate change.'
+				'up': 'Why aren\'t land cruises a thing yet?'
 			}]
 		]
 	}
@@ -63,7 +62,7 @@
 			$('#pic').css({'background-image': backgroundImage});
 
 		// Page Hide
-			
+
 			$('#recommendation').hide();
 
 		// Opening Animations
