@@ -14,7 +14,7 @@
 		'#statement': [
 			[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ],
 			[ 'html', {
-				'up': 'Why aren\'t land cruises a thing yet?'
+				'up': 'Exploring the realms of imagination and coffee.'
 			}]
 		]
 	}
