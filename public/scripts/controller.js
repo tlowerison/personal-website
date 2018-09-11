@@ -14,7 +14,7 @@
 		'#statement': [
 			[ 'font-size', { 'down': '2.2rem', 'up': '3rem' } ],
 			[ 'html', {
-				'up': 'Exploring the realms of imagination and coffee.'
+				'up': 'Innovation • Creativity • Coffee'
 			}]
 		]
 	}
