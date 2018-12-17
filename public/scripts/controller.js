@@ -196,13 +196,6 @@ $(document).ready(function() {
 		setTimeout(() => {
 			$('#home-content').fadeOut();
 			$('#creativity-content').fadeIn();
-	    var myFullpage = new fullpage('#fullpage', {
-	        anchors: ['music', 'art', 'design'],
-	        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-	        navigation: true,
-	        navigationPosition: 'right',
-	        navigationTooltips: ['Music', 'Art', 'Design']
-	    });
 		}, 1250 + 2 * N * 200);
 	});
 
