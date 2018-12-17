@@ -138,24 +138,34 @@ $(document).ready(function() {
 		let count = 0;
 		const keys = shuffle([...Array(N).keys()]);
 		keys.forEach(i => {
-			setTimeout(() => $(`#pic-${i}`).css('opacity', 0), count * 175);
+			setTimeout(() => $(`#pic-${i}`).css('opacity', 0), count * 100);
 			count += 1;
 		});
 		count = 0;
 		keys.forEach(i => {
-			setTimeout(() => $(`#pic-${i}`).css('opacity', 1), 500 + count * 175);
+			setTimeout(() => $(`#pic-${i}`).css('opacity', 1), 300 + count * 100);
 			count += 1;
 		});
 		count = 0;
 		keys.forEach(i => {
-			setTimeout(() => $(`#pic-${i}`).css('opacity', 0), 1000 + count * 175);
+			setTimeout(() => $(`#pic-${i}`).css('opacity', 0), 600 + count * 100);
+			count += 1;
+		});
+		count = 0;
+		keys.forEach(i => {
+			setTimeout(() => $(`#pic-${i}`).css('opacity', 1), 900 + count * 100);
+			count += 1;
+		});
+		count = 0;
+		keys.forEach(i => {
+			setTimeout(() => $(`#pic-${i}`).css('opacity', 0), 1200 + count * 100);
 			count += 1;
 		});
 		anime({
 			targets: '#home-content-container',
 			opacity: {
 				value: 0,
-				delay: 1500,
+				delay: 1200,
 				duration: 500,
 				easing: 'linear',
 			}
@@ -163,7 +173,7 @@ $(document).ready(function() {
 		setTimeout(() => {
 			$('#home-content').fadeOut();
 			$('#innovation-content').fadeIn();
-		}, 1000 + N * 175);
+		}, 1100 + N * 100);
 	});
 
 	$('#creativity-content-link').click(() => {
@@ -206,9 +216,10 @@ $(document).ready(function() {
 				targets: `#pic-${i}`,
 				width: 0,
 				height: 0,
+				opacity: 0,
 				translateX: 2.2 * (N - i) / N * vh / 2,
 				translateY: 2.2 * (N - i) / N * vh / 2,
-				backgroundSize: 15 * 100 / (2.2 * (N - i) / N),
+				backgroundSize: 12.5 * 100 / (2.2 * (N - i) / N),
 				duration: 1500,
 				delay: Math.pow(N - i, 0.8) * 300,
 				easing: 'easeInOutQuint',
