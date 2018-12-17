@@ -6,6 +6,7 @@ a {
 body {
 	font-family: 'Crimson Text', sans-serif;
 	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .banner {
@@ -13,10 +14,13 @@ body {
 }
 
 .style-link {
-	opacity: 0;
 	font-size: 2rem;
 	color: #fff !important;
 	text-decoration: none;
+	opacity: 0;
+}
+
+.banner-link {
 	letter-spacing: -5px;
 }
 
@@ -25,7 +29,15 @@ body {
 	font-size: 4rem;
 }
 
-#arrow {
+.container {
+	background-color: rgba(0, 0, 0, 0) !important;
+	position: absolute;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.arrow {
 	display: inline-block;
 	margin-left: -36px;
 	width: 36px;
@@ -33,12 +45,24 @@ body {
 	vertical-align: middle;
 }
 
-#content {
-	background-image: url("../img/mountains.jpg");
-	background-size: cover;
-	background-position: 50% 0;
+#home-content {
 	color: #fff;
 	position: relative;
+	height: 100vh;
+}
+
+#home-content-container {
+	background-image: url("../img/mountains.svg?lastmod=");
+	background-size: cover;
+	background-position: 50% 0%;
+	padding: 0%;
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+	display: none;
+	color: #222;
 }
 
 #footer-banner {
@@ -55,7 +79,7 @@ body {
 	text-justify: inter-word;
 }
 
-#lrl {
+#letter-of-recommendation-link {
 	letter-spacing: 2px !important;
 	opacity: 0;
 	font-size: 2.5rem;
@@ -65,21 +89,24 @@ body {
 #name {
 	letter-spacing: -5px;
 	opacity: 0;
-    text-decoration: none;
+  text-decoration: none;
 }
 
-#pic {
-	height: 100vh;
-	background-image: url("../img/mountains.svg?lastmod=");
+.pic {
+	/* height: 100vh; */
+	background-image: url("../img/mountains.jpg");
 	background-size: cover;
-	background-position: 50% 0;
+	background-position: 50% 50%;
+	border-radius: 100%;
+	position: absolute;
+}
+.circ {
+	position: relative;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
-#recommendation {
-	color: #222;
-}
-
-#rel {
+.return-home-link {
 	color: #222 !important;
 	opacity: 1 !important;
 	letter-spacing: 2px;
@@ -88,15 +115,16 @@ body {
 #statement {
 	margin-top: 5vh;
 	padding: auto;
+	font-size: 2rem;
 }
 
-#wrapper {
+.wrapper {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	cursor: pointer;
 	display: inline-block;
 }
 
-#wrapper a {
+.wrapper a {
 	vertical-align: middle;
 }
