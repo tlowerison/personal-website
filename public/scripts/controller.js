@@ -257,6 +257,7 @@ $(document).ready(function() {
 			$('#letter-of-recommendation-content').fadeOut();
 			$('#home-content-container').css('opacity', 1);
 			$('.pic').css('opacity', 1);
+			$('.circ').css('opacity', 1);
 			window.scrollTo(0, 0);
 			anime({
 				targets: '.pic',

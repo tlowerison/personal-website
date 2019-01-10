@@ -52,9 +52,9 @@ body {
 }
 
 #home-content-container {
-	background-image: url("../img/mountains.svg?lastmod=");
+	/* background-image: url("../img/mountains.svg?lastmod=");
 	background-size: cover;
-	background-position: 50% 0%;
+	background-position: 50% 0%; */
 	padding: 0%;
 	width: 100vw;
 	height: 100vh;
